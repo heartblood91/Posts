@@ -6,7 +6,7 @@ import { readPost } from "../actions/index";
 
 class Post extends Component {
   componentWillMount() {
-    this.props.readPost(this.props.match.params.id);
+    this.props.readPost(this.props.params.id);
   }
   renderPostContent() {
     const { post } = this.props;
