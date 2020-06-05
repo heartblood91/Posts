@@ -8,7 +8,8 @@
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
-"build": "webpack"
+    "build": "webpack",
+    "server": "npx json-server --watch fillDB.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,17 +20,18 @@
     "babel-preset-react": "^6.1.18",
     "chai": "^4.2.0",
     "chai-jquery": "^2.0.0",
-    "jquery": "^3.4.1",
-    "jsdom": "^15.2.0",
-    "mocha": "^6.2.2",
+    "jquery": "^3.5.1",
+    "jsdom": "^15.2.1",
+    "mocha": "^6.2.3",
     "react-addons-test-utils": "^0.14.7",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.19.2",
     "babel-preset-stage-1": "^6.1.18",
     "casual": "^1.6.2",
+    "json-server": "^0.16.1",
     "lodash": "^4.17.15",
     "react": "^0.14.9",
     "react-dom": "^0.14.9",
